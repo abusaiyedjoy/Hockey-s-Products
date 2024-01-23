@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hockey's Products</title>
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon" />
     <!-- Font Awesome Icons -->
     <link
       rel="stylesheet"
@@ -20,11 +20,11 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts  Lato-->
+    <!-- Google Fonts  Manrope-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <!-- CSS Styles -->
@@ -32,15 +32,249 @@
       * {
         margin: 0;
         padding: 0;
-        font-family: "lato", serif;
+        font-family: "Manrope", sans-serif;
       }
     </style>
   </head>
   <body>
     <!-- Header Section -->
-    <header></header>
+    <header class="container mx-auto">
+      <!-- Navbar Section -->
+      <nav class="mt-8">
+        <!-- Navbar for Desktop & Tablet -->
+        <div class="hidden sm:block sm:flex justify-between items-center">
+          <h1 class="sm:text-3xl lg:text-4xl font-extrabold">
+            Hockey<span class="text-[#FF4240]"><sup>,</sup></span
+            >s
+          </h1>
+          <div class="flex sm:gap-3 md:gap-4 lg:gap-6 xl:gap-10">
+            <li class="list-none sm:text-base md:text-xl">
+              <a class="hover:text-[#FF4240]" href="">Home</a>
+            </li>
+            <li class="list-none sm:text-base md:text-xl">
+              <a class="hover:text-[#FF4240]" href="">About</a>
+            </li>
+            <li class="list-none sm:text-base md:text-xl">
+              <a class="hover:text-[#FF4240]" href="">Pages</a>
+            </li>
+            <li class="list-none sm:text-base md:text-xl">
+              <a class="hover:text-[#FF4240]" href="">Blog</a>
+            </li>
+            <li class="list-none sm:text-base md:text-xl">
+              <a class="hover:text-[#FF4240]" href="">Contact</a>
+            </li>
+          </div>
+          <div>
+            <i
+              class="sm:text-xl md:text-2xl mr-2 md:mr-4 fa-solid fa-magnifying-glass"
+            ></i>
+            <button
+              class="text-white sm:text-xl md:text-2xl font-bold btn btn-primary bg-[#ff4240] hover:bg-[#ff4240] border-none"
+            >
+              Get Ticket
+            </button>
+          </div>
+        </div>
+        <!-- Navbar for Mobile -->
+        <div
+          class="block flex justify-between items-center sm:hidden navbar bg-base-100"
+        >
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li class="hover:text-[#FF4240]"><a>Home</a></li>
+                <li class="hover:text-[#FF4240]"><a>About</a></li>
+                <li class="hover:text-[#FF4240]"><a>Pages</a></li>
+                <li class="hover:text-[#FF4240]"><a>Blog</a></li>
+                <li class="hover:text-[#FF4240]"><a>Contact</a></li>
+              </ul>
+            </div>
+            <h1 class="text-2xl font-extrabold">
+              Hockey<span class="text-[#FF4240]"><sup>,</sup></span
+              >s
+            </h1>
+          </div>
+          <div class="navbar-end">
+            <button
+              class="text-white p-2 font-bold btn btn-primary bg-[#ff4240] hover:bg-[#ff4240] border-none"
+            >
+              Get Ticket
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- Banner Section -->
+      <section>
+        <div class="carousel mt-20 h-[80vh]">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./Images/1.png" class="w-full object-cover rounded-xl" />
+            <div
+              class="absolute flex justify-center md:justify-start items-end gap-5 w-full h-full transform -translate-y-1/2 left-5 top-1/2 pb-5 pl-5"
+            >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-slate-600 sm:w-810sm:h-10 text-white"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-slate-600 sm:w-810sm:h-10 text-white"
+                >❯</a
+              >
+            </div>
+            <div
+              class="absolute p-8 bg-slate-950 text-white rounded-xl -bottom-52 md:right-10 md:bottom-10 md:max-w-[450px] lg:max-w-[550px] text-left"
+            >
+              <h1 class="font-extrabold mb-3 md:text-xl lg:text-2xl">
+                Meet all the heroes from the field
+              </h1>
+              <p class="text-sm">
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin.
+              </p>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./Images/1.png" class="w-full object-cover rounded-xl" />
+            <div
+              class="absolute flex justify-center md:justify-start items-end gap-5 w-full h-full transform -translate-y-1/2 left-5 top-1/2 pb-5 pl-5"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-slate-600 sm:w-10 sm:h-10 text-white"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-slate-600 sm:w-10 sm:h-10 text-white"
+                >❯</a
+              >
+            </div>
+            <div
+              class="absolute p-8 bg-slate-950 text-white rounded-xl -bottom-52 md:right-10 md:bottom-10 md:max-w-[450px] lg:max-w-[550px] text-left"
+            >
+              <h1 class="font-extrabold mb-3 md:text-xl lg:text-2xl">
+                Meet all the heroes from the field
+              </h1>
+              <p class="text-sm">
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin.
+              </p>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./Images/1.png" class="w-full object-cover rounded-xl" />
+            <div
+              class="absolute flex justify-center md:justify-start items-end gap-5 w-full h-full transform -translate-y-1/2 left-5 top-1/2 pb-5 pl-5"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-slate-600 sm:w-10 sm:h-10 text-white"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-slate-600 sm:w-10 sm:h-10 text-white"
+                >❯</a
+              >
+            </div>
+            <div
+              class="absolute p-8 bg-slate-950 text-white rounded-xl -bottom-52 md:right-10 md:bottom-10 md:max-w-[450px] lg:max-w-[550px] text-left"
+            >
+              <h1 class="font-extrabold mb-3 md:text-xl lg:text-2xl">
+                Meet all the heroes from the field
+              </h1>
+              <p class="text-sm">
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin.
+              </p>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="./Images/1.png" class="w-full object-cover rounded-xl" />
+            <div
+              class="absolute flex justify-center md:justify-start items-end gap-5 w-full h-full transform -translate-y-1/2 left-5 top-1/2 pb-5 pl-5"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-slate-600 sm:w-10 sm:h-10 text-white"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-slate-600 sm:w-10 sm:h-10 text-white"
+                >❯</a
+              >
+            </div>
+            <div
+              class="absolute p-8 bg-slate-950 text-white rounded-xl -bottom-52 md:right-10 md:bottom-10 md:max-w-[450px] lg:max-w-[550px] text-left"
+            >
+              <h1 class="font-extrabold mb-3 md:text-xl lg:text-2xl">
+                Meet all the heroes from the field
+              </h1>
+              <p class="text-sm">
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
     <!-- Main Section -->
-    <main></main>
+    <main class="container mx-auto">
+      <!-- Hockey's Club Section -->
+      <section>
+        <div class="py-8 text-center mt-20 mb-10 border-y-2 border-dashed">
+          <h1 class="text-2xl mb-2 md:text-3xl font-extrabold">Professional Hockeys Club</h1>
+          <p>
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis <br class="hidden md:block"> placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="text-center mb-8">
+                <div class="radial-progress mb-5 text-xl text-red-500 font-extrabold" style="--value:87;" role="progressbar"><span class="text-black ">87%</span></div>
+                <h3 class="text-xl font-bold mb-5">Prayer Facility</h3>
+                <p class="text-sm">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+            </div>
+            <div class="text-center mb-8">
+                <div class="radial-progress mb-5 text-xl text-green-500 font-extrabold" style="--value:95;" role="progressbar"><span class="text-black ">95%</span></div>
+                <h3 class="text-xl font-bold mb-5">Experienced Coach</h3>
+                <p class="text-sm">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+            </div>
+            <div class="text-center mb-8">
+                <div class="radial-progress mb-5 text-xl text-yellow-500 font-extrabold" style="--value:90;" role="progressbar"><span class="text-black ">90%</span></div>
+                <h3 class="text-xl font-bold mb-5">Senior Player</h3>
+                <p class="text-sm">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+            </div>
+            <div class="text-center mb-8">
+                <div class="radial-progress mb-5 text-xl text-blue-500 font-extrabold" style="--value:80;" role="progressbar"><span class="text-black ">80%</span></div>
+                <h3 class="text-xl font-bold mb-5">Training Grou95</h3>
+                <p class="text-sm">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+            </div>
+        </div>
+      </section>
+    </main>
     <!-- Footer Section -->
     <footer></footer>
   </body>
